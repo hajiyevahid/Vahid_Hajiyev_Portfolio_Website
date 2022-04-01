@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width = device-width" initial-scale="1.0" />
+    <title>Vahid Hajiyev's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <section class="sub-header">
+      <nav>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times fa-2x" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">Home </a></li>
+            <li><a href="">My Projects</a></li>
+            <li>
+              <a href="Vahid Hajiyev CV.pdf" download="">Download my CV</a>
+            </li>
+            <li><a href="">Contacts</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars fa-3x" onclick="showMenu()"></i>
+      </nav>
+    </section>
+
+    <section class="about-me">
+      <h1 class="textim">About Me:</h1>
+
+      <div class="row">
+        <div class="myimage1">
+          <br />
+          <h1>
+            <br />
+            <br />
+            <br />
+
+            Hello, I am Vahid Hajiyev-a second year Computer <br />
+            Engineering master's student at Vilnius Tech university. I <br />
+            am seeking a part-time or full-time position in the field of
+            Computer Engineering, where I can apply my knowledge and skills for
+            continuous improvement. Worked as and collabora-<br />
+            ted with specialists and always open to new experiences. <br />
+            Quickly navigate to new conditions, learn quickly, because I have an
+            abroad outlook and I read a lot. For more detailed information,
+            please take a glance at my resume and if interested, don't hesitate
+            to contact me. Let the intellect save the world!
+          </h1>
+          <p></p>
+        </div>
+        <div class="myimage"></div>
+      </div>
+      <div class="about-col">
+        <div class="about-col"></div>
+      </div>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+        navLinks.style.display = "block";
+        navLinks.style.transition = "1";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+        navLinks.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

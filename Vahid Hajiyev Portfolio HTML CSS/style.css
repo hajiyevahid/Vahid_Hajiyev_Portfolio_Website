@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Dancing Script", cursive;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: black;
+  position: relative;
+  z-index: -5;
+  background-repeat: no-repeat;
+  background-image: url(images/android-3840x2160-4k-5k-wallpaper-abstract-yellow-blue-green-3436.jpg);
+}
+.header {
+  min-height: 100vh;
+  min-width: 100vh;
+  background-image: url(images/hr-22.gif);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 1% 1%;
+  justify-content: space-between;
+}
+
+.nav-links {
+  text-align: left;
+  margin-left: 900px;
+  margin-right: 70px;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 11px 25px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: darkgreen;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: -20px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: goldenrod;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.text-box {
+  width: 90%;
+  color: blue;
+  position: absolute;
+  top: 19%;
+  left: 21%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 22px;
+}
+.text-box p {
+  margin: 7px 0 20px;
+  font-size: 4px;
+}
+
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: darkgreen;
+  border: 2px solid darkolivegreen;
+  padding: 12px 34px;
+  font-size: 15px;
+  background: transparent;
+  position: static;
+  cursor: pointer;
+}
+.hero-btn:hover {
+  border: 2px solid darkgreen;
+  background: yellow;
+  transition: 1.5s;
+}
+
+i.fa {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .text-box h1 {
+    font-size: 15px;
+    top: 10%;
+    margin-left: 25%;
+    margin-top: -40px;
+  }
+
+  .hero-btn {
+    margin-left: 100px;
+    margin-top: 30px;
+  }
+
+  .nav-links ul li {
+    display: block;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+
+  .nav-links {
+    position: absolute;
+    background: gold;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    margin-right: -0px;
+    text-align: left;
+    z-index: 2;
+  }
+
+  .nav-links ul {
+    padding: 20px;
+  }
+
+  i.fa {
+    display: block;
+    color: #777;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+}
+
+p {
+  word-wrap: break-word;
+}
+.row {
+  margin-top: 81px;
+  position: relative;
+}
+.sub-header h1 {
+  margin-top: 50px;
+  margin-left: -200px;
+}
+
+/* .about-me {
+  margin-top: -300px;
+} */
+.myimage {
+  height: 500px;
+  display: inline-block;
+  width: 500px;
+  margin-left: -5px;
+  border-radius: 0px 110px 110px 0px;
+  background-size: auto 500px;
+  background-image: url(images/276137716_1444406785990295_6574770576772369728_n.jpg);
+  /* margin-top: -1120px;
+  padding-bottom: 57px;
+  padding-left: 796px; */
+  position: absolute;
+}
+.myimage1 {
+  display: inline-block;
+  height: 500px;
+  width: 500px;
+  background-image: url(images/3840x2160-davys-grey-solid-color-background.jpg);
+  /* margin-top: -1227px; */
+  /* padding-bottom: 79px;
+    margin-left: 296px; */
+  border-bottom-left-radius: 110px;
+  border-top-left-radius: 110px;
+  position: absolute;
+  left: 18%;
+}
+h1 {
+  color: white;
+  font-size: medium;
+}
+h1.textim {
+  display: none;
+}
+h1.this {
+  color: darkgreen;
+}
